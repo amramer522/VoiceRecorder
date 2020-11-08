@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/record_fragment_iv_header_image"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="@dimen/d64"
+        android:src="@drawable/ic_musical_notes"
+        />
+
+    <TextView
+        android:id="@+id/record_fragment_tv_file_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/d32"
+        android:layout_marginEnd="@dimen/d32"
+        android:layout_marginTop="@dimen/d32"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="@dimen/s18"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="Press mic button \n to start recording"
+        />
+
+    <Chronometer
+        android:id="@+id/record_fragment_record_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/d32"
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="@font/open_sans_light"
+        android:textSize="@dimen/s64" />
+
+    <ImageButton
+        android:id="@+id/record_fragment_iv_record_button"
+        android:layout_width="wrap_content"
+        android:background="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_stopped_record"
+        android:layout_marginTop="@dimen/d32"
+        />
+
+    <ImageButton
+        android:id="@+id/record_fragment_iv_audio_list"
+        android:layout_width="wrap_content"
+        android:background="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:src="@drawable/ic_list"
+        android:layout_marginTop="@dimen/d32"
+        android:layout_marginEnd="@dimen/d16"
+        android:layout_marginBottom="@dimen/d16"
+        />
+
+</LinearLayout>
